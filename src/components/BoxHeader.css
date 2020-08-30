@@ -1,0 +1,23 @@
+.BoxHeader {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px 10px 10px;
+}
+
+.BoxHeader .ViewAll {
+    font-size: 19px;
+    color: #FF2D55;
+    letter-spacing: 0;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.BoxHeader .LinkMore {
+    font-size: 12px;
+    color: #878787;
+    letter-spacing: 0;
+    font-weight: 400;
+    line-height: 1.5;
+}
