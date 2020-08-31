@@ -1,0 +1,16 @@
+.LatestAlbum {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    /* grid-gap: 10px;
+    padding: 10px; */
+}
+
+/* .LatestAlbum2020 table tbody tr td {
+    vertical-align: top;
+} */
+
+.LatestAlbum .BoxHeader {
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
