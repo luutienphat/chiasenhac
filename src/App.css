@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+    font-family: 'SF Pro Display';
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.LatestVideo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.LatestVideo .BoxHeader {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+.FavoriteArtist {
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+.FavoriteArtist .ImageCover:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.FavoriteArtist > .ImageCover:first-child .Overlay .Artist{
+  font-size: 20px;
+}
+
+.Footer {
+  background-color: #282828;
+  padding: 20px 0;
+  color: #a9a9a9;
+}
+
+.Footer .FooterContainer {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Footer .FooterContainer .FooterList {
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Footer hr {
+  background-color: #4a4a4a;
+  border-color: #4a4a4a;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 15px;
+  margin-left: 15px;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
 }
+
