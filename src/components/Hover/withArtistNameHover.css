@@ -1,0 +1,31 @@
+.Overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: linear 0.2s;
+}
+
+.Overlay .Artist {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    text-transform: capitalize;
+    transition: linear 0.2s;
+}
+.Overlay:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: linear 0.2s;
+}
+.Overlay:hover .Artist {
+    opacity: 1;
+    transition: linear 0.2s;
+}
