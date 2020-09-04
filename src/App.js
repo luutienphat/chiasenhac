@@ -8,6 +8,8 @@ import Footer from './components/Footer.js';
 import SongCard from './components/Card/SongCard.js';
 import ImageCover from './components/ImageCover.js';
 import ArtistCard from './components/Card/ArtistCard.js'
+import UploaderCard from './components/UploaderCard.js';
+import SongChartCard from './components/SongChartCard.js';
 
 function App() {
 
@@ -15,7 +17,7 @@ function App() {
         <div className="App">
             {/* <ImageCover src="/images/1.jpg" aspectRatio = "1:1"/> */}
             {/* <LatestAlbum /> */}
-            <div className="FavoriteArtist">
+            {/* <div className="FavoriteArtist">
                 <ArtistCard/>
                 <ArtistCard />
                 <ArtistCard />
@@ -31,8 +33,10 @@ function App() {
                 <ArtistCard />
                 <ArtistCard />
                 <ArtistCard />
-            </div>
-
+            </div> */}
+            {/* <UploaderCard /> */}
+            {/* <SongCard /> */}
+            <SongChartCard />
             {/* <div className="LatestVideo">
                 <BoxHeader title="Video mới"/>
                 <VideoCard/>

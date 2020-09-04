@@ -1,3 +1,187 @@
 .SongCard {
-    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 11px 0;
+    border-top: 1px solid #dedede;
+    transition: all 0.2s linear;
+}
+.SongCard:hover {
+    background-image: linear-gradient(-180deg, rgba(238, 238, 238, 0.12) 25%, rgba(216, 216, 216, 0.21) 99%);
+}
+
+.SongCard .SongImage {
+    margin-right: 0.5rem;
+    display: flex;
+    align-content: center;
+    border: none;
+    position: relative;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.SongCard .SongImage img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+
+.SongCard .SongImage .SongOverlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 1px solid rgba(0,0,0,.125); */
+    border-radius: 3px;
+    /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
+    transition: 0.2s linear;
+}
+
+.SongCard .SongImage .SongOverlay svg {
+    width: 24px;
+    height: 24px;
+    top: calc((100% - 48px)/2);
+    left: calc((100% - 48px)/2);
+    color: white;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+.SongCard:hover .SongImage .SongOverlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.2s linear;
+}
+.SongCard:hover .SongImage .SongOverlay svg {
+    opacity: 1;
+    transition: 0.2s linear;
+}
+
+.SongCard .SongInformation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 0;
+
+}
+.SongCard .SongInformation .SongTitle {
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.SongCard .SongInformation .SongTitle a {
+    color: #1B1B1B;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19px;
+    font-weight: 500;
+    white-space: nowrap;
+    max-width: 230px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all 0.2s linear;
+    text-decoration: none;
+}
+.SongCard .SongInformation .SongTitle a:hover {
+    color: #FF2D55;
+    transition: all 0.2s linear;
+}
+
+.SongCard .SongInformation .SongArtist {
+    display: flex;
+    font-size: 12px;
+    color: #878787;
+    font-weight: 400;
+}
+
+.SongCard .SongInformation .SongArtist a {
+    white-space: nowrap;
+    max-width: 230px;
+    overflow: hidden;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    color: #878787;
+    letter-spacing: 0;
+    transition: all 0.2s linear;
+    text-decoration: none;
+}
+.SongCard .SongInformation .SongArtist a:hover {
+    color: #FF2D55;
+    transition: all 0.2s linear;
+}
+
+.SongCard .SongInformation .AudioQuality {
+    font-size: 11px;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: red;
+    margin-bottom: 0;
+}
+
+.SongCard .SongTracking {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.SongCard .SongTracking .DisapearOnHover {
+    display: flex;
+    flex-direction: column;
+}
+.SongCard:hover .SongTracking .DisapearOnHover {
+    display: none;
+}
+
+.SongCard .SongTracking .DisapearOnHover div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 11px;
+    color: #878787;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.SongCard .SongTracking svg {
+    color: #878787;
+    font-size: 13px;
+    display: inline-flex;
+    vertical-align: text-top;
+    margin-right: 0.7px;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+}
+
+.SongCard .SongTracking .ApearOnHover {
+    margin-right: 12px;
+    /* text-align: right; */
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.SongCard .SongTracking .ApearOnHover svg {
+    font-size: 15px;
+    margin-right: 0.6rem;
+    transition: 0.2s linear;
+}
+.SongCard .SongTracking .ApearOnHover svg:hover {
+    color: #FF2D55;
+    transition: 0.2s linear;
+}
+.SongCard:hover .SongTracking .ApearOnHover {
+    display: flex;
 }

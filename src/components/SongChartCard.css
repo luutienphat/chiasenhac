@@ -1,0 +1,12 @@
+.DownloadCount.Single {
+    display: flex;
+    align-items: flex-end;
+    font-size: 10px;
+    color: #747474;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+.UploaderImage.Square {
+    border-radius: 0;
+}
